@@ -114,12 +114,22 @@
 
     <!-- Form submit button -->
     <div class="d-grid">
-      <button class="btn btn-outline-secondary btn-lg" type="submit" onclick="return alert('Message sent!');">Send</button>
+      <button class="btn btn-outline-secondary btn-lg" type="submit" onclick="myFunction()">Send</button>
       <input type="hidden" name="_next" value="index.html" />
     </div>
   </form>
 </div>
-  
+  <script>
+function myFunction() {
+  var txt;
+  if (confirm("Press a button!")) {
+    txt = "You pressed OK!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
 <script type="module">
   
   // Import the functions you need from the SDKs you need
