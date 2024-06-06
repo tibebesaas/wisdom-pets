@@ -73,26 +73,30 @@
 <h1 class="mt-5" style="color: #E3E6E6"; font-weight="bold">Contact Us</h1>
 <h2 style="font-size:16pt;color: #cdae51;">Drop us a line!</h2>
 <form id="contact_form" name="contact_form" method="post">
-   <div class="mb-2 row">
-        <div class="col">
+   <div class="form-group">
+   <!--div class="mb-2 row">
+        <div class="col"-->
             <input type="text" required maxlength="50" class="form-control" id="name" name="name"
               placeholder="Name">
-        </div>
+        <!--/div-->
       </div>
-     <div class="mb-2 row">
-        <div class="col">
+<!--      <div class="mb-2 row">
+        <div class="col"> -->
+   <div class="form-group">
             <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
                 placeholder="Email*">
-        </div>
+<!--         </div> -->
     </div>
-    <div class="mb-2 row">
-        <div class="col">
+<!--     <div class="mb-2 row">
+        <div class="col"> -->
+   <div class="form-group">
             <input type="tel"  class="form-control" id="phone" name="phone"
                 placeholder="Phone (Format 012-345-6789)" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
             <!--small>Format: 123-456-7890</small-->
-        </div>
+<!--         </div> -->
     </div>
-    <div class="mb-3">
+<!--     <div class="mb-3"> -->
+   <div class="form-group">
         <textarea class="form-control" style="resize:none;overflow-y:scroll" id="message" name="message" rows="5"  placeholder="Type your Message..."></textarea>
     </div>
     <div class="d-grid">
