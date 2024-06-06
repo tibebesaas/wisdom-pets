@@ -115,19 +115,17 @@
     <!-- Form submit button -->
     <div class="d-grid">
       <button class="btn btn-outline-secondary btn-lg" type="submit" onclick="myFunction()">Send</button>
-      <input type="hidden" name="_next" value="index.html" />
+      <input type="text" id="sent" name="sent" />
     </div>
   </form>
 </div>
   <script>
 function myFunction() {
   var txt;
-  if (confirm("Press a button!")) {
-    txt = "You pressed OK!";
-  } else {
-    txt = "You pressed Cancel!";
-  }
-  document.getElementById("demo").innerHTML = txt;
+  if (alert("Message Sent!")) {
+    txt = "Message Sent!";
+  } 
+  document.getElementById("sent").innerHTML = txt;
 }
 </script>
 <script type="module">
